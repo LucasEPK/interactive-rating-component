@@ -35,46 +35,36 @@
           to help us improve our offering!
         </h2>
 
-        <menu>
 
-          <form>
-            <li class="button_list">
-              <input class="button_input" type="radio" id="n1" name="rating" value="1">
-              <label class="button_label" for="n1">1</label>
-              <!-- <button class="button_txt">1</button> -->
-            </li>
-            <li class="button_list">
-              <input class="button_input" type="radio" id="n2" name="rating" value="2">
-              <label class="button_label" for="n2">2</label>
-              <!-- <button class="button_txt">2</button> -->
-            </li>
-            <li class="button_list">
-              <input class="button_input" type="radio" id="n3" name="rating" value="3">
-              <label class="button_label" for="n3">3</label>
-              <!-- <button class="button_txt">3</button> -->
-            </li>
-            <li class="button_list">
-              <input class="button_input" type="radio" id="n4" name="rating" value="4">
-              <label class="button_label" for="n4">4</label>
-              <!-- <button class="button_txt">4</button> -->
-            </li>
-            <li class="button_list">
-              <input class="button_input" type="radio" id="n5" name="rating" value="5">
-              <label class="button_label" for="n5">5</label>
-              <!-- <button class="button_txt">5</button> -->
-            </li>
-            <li class="submit_button_list">
-              <input class="submit_button" type="submit" value="SUBMIT" onclick="submit_validation()">
-            </li>
-          </form>
+        <form>
+          <fieldset>
+            
+            <input class="button_input" type="radio" id="n1" name="rating" value="1">
+            <label class="button_label" for="n1">1</label>
+  
+            <input class="button_input" type="radio" id="n2" name="rating" value="2">
+            <label class="button_label" for="n2">2</label>
+  
+            <input class="button_input" type="radio" id="n3" name="rating" value="3">
+            <label class="button_label" for="n3">3</label>
+  
+            <input class="button_input" type="radio" id="n4" name="rating" value="4">
+            <label class="button_label" for="n4">4</label>
+            
+            <input class="button_input" type="radio" id="n5" name="rating" value="5">
+            <label class="button_label" for="n5">5</label>
+          
+            <input class="submit_button" type="submit" value="SUBMIT" onclick="submit_validation(document.querySelector('input[name=\'rating\']:checked'))">
 
-        </menu>
+          </fieldset>
+        </form>
+
       </section>
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
       <section class="thank_u_card">
-        <img src="images/illustration-thank-you.svg" alt="phone with a form coming out of it">
+        <img class="phone_img" src="images/illustration-thank-you.svg" alt="phone with a form coming out of it">
         <p class="orange_txt">
           You selected <!--Add rating here--> out of 5
         </p>
