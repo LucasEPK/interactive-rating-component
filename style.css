@@ -127,3 +127,47 @@ fieldset{
 
 
 }
+
+@media(min-width: 800px){
+    .card{
+        border-radius: 20px;
+
+        max-width: 420px; /*here I use max-width in case of screens smaller than 330px*/
+        height: 400px;
+
+        padding: 35px;
+    }
+
+    .big_txt{
+        font-size: 1.8rem;
+    }
+
+    fieldset{
+        gap: 2rem 0;
+    }
+
+    .star_icon{
+        height: 50px;
+        width: 50px;
+
+        padding: 16px 16px;
+    }
+
+    .button_label{
+        padding: 12px 20px;
+    }
+
+    .button_label:hover{
+        background-color: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .submit_button:hover{
+        background-color: hsl(0, 0%, 100%);/*white*/
+        color: hsl(25, 97%, 53%); /*orange*/
+    }
+
+    .thank_u_card .big_txt{
+        font-size: 2rem;
+    }
+}
