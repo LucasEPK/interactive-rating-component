@@ -63,6 +63,7 @@ fieldset{
 }
 
 .button_input:checked + .button_label{
+    /*this makes the selected radio button gray*/
     background-color: hsl(217, 12%, 63%);/*Light Grey*/
     color: hsl(0, 0%, 100%);/*white*/
 }
